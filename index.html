@@ -17,12 +17,12 @@
 <body>
      <header class="header">
         <ul class="header__menu">
-            <li class="header__menu--li"><a href="">TOP</a></li>
-            <li class="header__menu--li"><a href="">ABOUT</a></li>
-            <li class="header__menu--li"><a href="">WORKS</a></li>
+            <li class="header__menu--li"><a href="#top">TOP</a></li>
+            <li class="header__menu--li"><a href="#works">WORKS</a></li>
+            <li class="header__menu--li"><a href="#about">ABOUT</a></li>
         </ul>
      </header>
-     <section class="top">
+     <section id="top" class="top">
         <div class="top__wrap">
             <div class="top__title">
                 <h1 class="top__name">Koiso<br>Soichiro</h1>
@@ -32,26 +32,11 @@
                 <img class="top__box--img" src="img/titleimg.png" alt="" >
             </div>
         </div>
-        <div class="top__arrow"><a href="" class="top__arrow--a"></a></div>
+        <div class="top__arrow"><a href="#works" class="top__arrow--a"></a></div>
      </section>
 
-     <section class="about wrapper">
-        <h1 class="section__title"><span>About</span> Me</h1> 
-        <div class="content__wrap">
-            <div class="about__box">
-                <img class="about__box--img" src="img/IMG_1698.JPG" alt="" >
-            </div>
-            <div class="about__profile">
-                <h3 class="about__profile__name">小磯 聡一郎 / Koiso Soichiro</h3>
-                <p class="about__profile__desc">ここにテキストここにテキストここにテキストここにテキスト<br>
-                    ここにテキストここにテキストここにテキストここにテキスト</p>
-            </div>
-        </div>
-     </section>
-
-     <section class="works wrapper">
-        <h1 class="section__title">Collection of <span>works</span></h1>
-
+     <section id="works" class="works wrapper">
+        <h1 class="section__title">works /<span>作品</span></h1>
         <div class="works__wrap">
             <div class="works__group">
                 <div class="works__box"><img class="works__box--img" src="img/titleimg.png" alt="" ></div>
@@ -68,8 +53,32 @@
                 <p class="works__content">website</p>
                 <h3 class="works__desc">ウェブデザイン</h3>
             </div>
+        </div> 
+        
+     </section>
+
+     <section id="about" class="about wrapper">
+        <h1 class="section__title">About /<span>私について</span></h1> 
+        <div class="content__wrap">
+            <div class="about__box">
+                <img class="about__box--img" src="img/titleimg.png" alt="" >
+            </div>
+            <div class="about__profile">
+                <h3 class="about__profile__name">小磯 聡一郎 / Koiso Soichiro</h3>
+                <p class="about__profile__desc">2001年6月5日生まれ、神奈川県出身。<br>
+                    デザイン系の専門学校を卒業後、新卒で運用監視オペレーターの仕事に携わりましたが、体調を崩し、短期間で転身。現在はwebデザインに興味が湧き新しいキャリアを模索中です。　</p>
+            </div>
+        </div>
+     </section>
+
+     <section wrapper>
+        <div class="backtopArrow"><a class="backtopArrow--a" href="#top"></a>
+            <h2 class="backtopArrow__desc">Topへ戻る</h2>
         </div>
         
      </section>
+     <footer class="footer">
+        <p class="footer__copy">©2023 Soichiro</p>
+     </footer>
 </body>
 </html>
