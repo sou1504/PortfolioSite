@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (targetContent) {
           const rectTop = targetContent.getBoundingClientRect().top;
           const positionY = window.pageYOffset;
-          const target = rectTop + positionY;
+          const target = rectTop - 50 + positionY;
   
           window.scrollTo({
             top: target,

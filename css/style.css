@@ -78,7 +78,7 @@ a{
 }
 
 
-.top{
+#top{
   max-width: 1000px;
   margin: 40px auto;
   margin-top: -40px;
@@ -169,6 +169,7 @@ a{
 }
 .works__desc{
   font-size: l.25rem;
+  color: var(--mainTextColor);
 }
 
 .about{
@@ -246,8 +247,36 @@ a{
   font-size: 0.9rem;
 }
 
-/*smartphonesize(max480px)*/
-@media screen and (max-width: 480px) {
+/*page
+--------------------------------------------------------------------------*/
+.page-img{
+  width: 100%;
+}
+.page-img img{
+  width: 100%;
+  object-fit: cover;
+}
+.infomation div{
+  display: flex;
+}
+.infomation p{
+  margin-top: 1rem;
+}
+.infomation-img{
+  max-width: 45%;
+  margin-left: 1rem;
+}
+.infomation-img img{
+  width: 100%;
+}
+.page-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+/*smartphonesize(max780px)*/
+@media screen and (max-width: 780px) {
 
     /*common sp
   --------------------------------------------------------------------------*/
